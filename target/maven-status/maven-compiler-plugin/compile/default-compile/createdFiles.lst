@@ -1,0 +1,12 @@
+com\mycompany\infraestructura\DBManagement\Cliente.class
+com\mycompany\examenparcial1\Examenparcial1.class
+com\mycompany\infraestructura\DBManagement\Movimientos.class
+com\mycompany\infraestructura\Modelo\PersonaModelos.class
+com\mycompany\infraestructura\Modelo\MovimientoModelo.class
+com\mycompany\infraestructura\Modelo\CiudadModelo.class
+com\mycompany\infraestructura\DBManagement\Ciudad.class
+com\mycompany\infraestructura\Modelo\ClienteModelo.class
+com\mycompany\infraestructura\DBManagement\Persona.class
+com\mycompany\infraestructura\conexiones\Conexiones.class
+com\mycompany\infraestructura\DBManagement\Cuentas.class
+com\mycompany\infraestructura\Modelo\CuentaModelo.class
