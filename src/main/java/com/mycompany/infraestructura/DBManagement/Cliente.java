@@ -59,10 +59,11 @@ public class Cliente {
     }
 
     public ClienteModelo consultarCliente(int id){
-        ClienteModelo cliente = new ClienteModelo();
+        ClienteModelo cliente= new ClienteModelo();
+       
         try {
             conexion.setQuerySQL(conexion.conexionDB().createStatement());
-            conexion.setResultadoQuery(conexion.getQuerySQL().executeQuery("Select * from cliente where idPersona = " + id));
+            conexion.setResultadoQuery(conexion.getQuerySQL().executeQuery("Select * from cliente where idcliente = " + id));
             if(conexion.getResultadoQuery().next()){
                 cliente.setIdCliente(conexion.getResultadoQuery().getInt("idcliente"));
                 cliente.setIdPersona(conexion.getResultadoQuery().getInt("idpersona"));
@@ -77,5 +78,5 @@ public class Cliente {
         }
         return null;
     }
-    
+   
 }

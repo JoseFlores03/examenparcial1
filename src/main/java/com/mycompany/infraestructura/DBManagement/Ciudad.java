@@ -39,7 +39,7 @@ public class Ciudad {
         }
     }
 
-    public String modificarciudad(CiudadModelo ciudad,int id){
+    public String modificarciudad(CiudadModelo ciudad, int id){
 
         try {
             conexion.setQuerySQL(conexion.conexionDB().createStatement());
@@ -56,7 +56,7 @@ public class Ciudad {
     }
 
     public CiudadModelo consultarciudad(int id){
-        CiudadModelo ciudad = new CiudadModelo();
+            CiudadModelo ciudad= new CiudadModelo();
         try {
             conexion.setQuerySQL(conexion.conexionDB().createStatement());
             conexion.setResultadoQuery(conexion.getQuerySQL().executeQuery("Select * from ciudad where id = " + id));

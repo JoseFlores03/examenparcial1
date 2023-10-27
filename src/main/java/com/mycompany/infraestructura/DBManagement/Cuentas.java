@@ -76,11 +76,11 @@ public class Cuentas {
         }
     }
 
-    public CuentaModelo consultarcuenta(int id){
-        CuentaModelo cuenta = new CuentaModelo();
+    public CuentaModelo consultarcuenta(CuentaModelo cuenta){
+        ;
         try {
             conexion.setQuerySQL(conexion.conexionDB().createStatement());
-            conexion.setResultadoQuery(conexion.getQuerySQL().executeQuery("Select * from cuenta where id = " + id));
+            conexion.setResultadoQuery(conexion.getQuerySQL().executeQuery("Select * from cuenta where id = " + cuenta.IdCuenta));
             if(conexion.getResultadoQuery().next()){
                 cuenta.setIdCliente(conexion.getResultadoQuery().getInt("idcliente"));
                 cuenta.setTipoCuenta(conexion.getResultadoQuery().getString("tipocuenta"));
